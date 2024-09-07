@@ -3,7 +3,7 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
+  --button-list-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
   /* display: grid;
@@ -22,7 +22,7 @@
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
-    --button-primary-hover: #ccc;
+    --button-list-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
 }
@@ -61,38 +61,38 @@
   font-weight: 600;
 }
 
-.ctas {
+.section {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 6rem 0;
 }
 
-.ctas div {
+.section li {
   display: grid;
   align-items: center;
   justify-content: center;
 }
 
-.ctas span{
+.section span{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.primary {
+.list {
   /* border: 2px solid black; */
   color: var(--background);
   gap: 8px;
 }
 
-.primary img {
+.list img {
   /* width: 200px;
   height: 300px; */
   width: 100%;
 }
 
-.primary h3, .primary p{
+.list h3, .list p{
   color: var(--foreground);
 
 }
@@ -102,7 +102,7 @@
   min-width: 180px;
 }
 
-.primary button{
+.list button{
   padding: 0.8rem 1.4rem;
   font-size: 1rem;
   background-color: var(--foreground);
@@ -114,8 +114,8 @@
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
+  a.list:hover {
+    background: var(--button-list-hover);
     border-color: transparent;
   }
 
@@ -144,11 +144,11 @@
     text-align: center;
   }
 
-  .ctas {
+  .section {
     flex-direction: column;
   }
 
-  .ctas a {
+  .section a {
     font-size: 14px;
     height: 40px;
     padding: 0 16px;
