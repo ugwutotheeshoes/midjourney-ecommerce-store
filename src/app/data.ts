@@ -4,7 +4,7 @@ export interface ProductDataProp {
     price: number;
 }
 
-const transformations = "c_scale,h_300,w_200"
+const transformations = "h_300,w_200,f_auto,q_auto,dpr_auto,bo_3px_solid_black,e_blur:50,o_90,b_black/l_text:arial_30:FOR SALE,c_lfill,o_70,co_rgb:ffffff,a_12"
 
 export const ProductData: ProductDataProp[] = [
     {
